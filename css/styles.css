@@ -179,3 +179,27 @@ body {
 	letter-spacing: 0.02em;
 	color: var(--accent-color);
 }
+#contacts {
+	background-color: #64855b;
+}
+.contacts-link {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 166.666667%; /* 30/18 */
+	letter-spacing: 0.02em;
+	color: var(--secondary-text);
+}
+.contacts-link.tick {
+	font-weight: 700;
+}
+.footer-page {
+	background-color: var(--section-color);
+}
+.copy {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 136.363636%; /* 15/11 */
+	letter-spacing: 0.2em;
+	color: var(--secondary-text);
+}
