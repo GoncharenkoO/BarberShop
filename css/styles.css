@@ -32,6 +32,21 @@ body {
 .this-light {
 	color: var(--white-color);
 }
+.to-light {
+	color: var(--prime-text);
+}
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
 
 .page-header {
 	background-color: #9caa98;
@@ -114,9 +129,6 @@ body {
 	line-height: 166.666667%; /* 30/18 */
 	letter-spacing: 0.02em;
 }
-.to-light {
-	color: var(--prime-text);
-}
 .section-desc.post {
 	font-size: 14px;
 	line-height: 185.714286%; /* 26/14 */
@@ -150,4 +162,20 @@ body {
 	font-weight: 600;
 	font-size: 11px;
 	line-height: 136.363636%; /* 15/11 */
+}
+#employees {
+	background-color: var(--section-color);
+}
+.employees-title {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 138.888889%; /* 25/18 */
+	letter-spacing: 0.02em;
+}
+.employees-text {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 135.714286%; /* 19/14 */
+	letter-spacing: 0.02em;
+	color: var(--accent-color);
 }
