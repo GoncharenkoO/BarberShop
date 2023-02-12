@@ -7,12 +7,14 @@
 	--secondary-text: #9da4bd;
 	--accent-color: #ff6c00;
 	--section-color: #f7f7f7;
+	--sup-text: rgba(157, 164, 189, 0.6);
 	--text-form: rgba(157, 164, 189, 0.4);
 }
 
 body {
 	background-color: var(--white-color);
 	font-family: var(--text-font);
+	color: var(--main-text);
 }
 
 .list {
@@ -21,6 +23,13 @@ body {
 .link {
 	text-decoration: none;
 }
+.them-dark {
+	color: var(--sup-text);
+}
+.them-light {
+	color: var(--secondary-text);
+}
+
 .page-header {
 	background-color: #9caa98;
 }
@@ -38,13 +47,13 @@ body {
 }
 .contact-phone:hover,
 .contact-phone:focus {
-  color: var(--accent-color);
+	color: var(--accent-color);
 }
 
 .btn {
 	font-family: var(--text-font);
 	font-weight: 600;
-	font-size: 15px;
+	font-size: 12px;
 	line-height: 133.333333%; /* 16/12 */
 	letter-spacing: 0.09em;
 	width: 160px;
@@ -54,11 +63,63 @@ body {
 	text-transform: uppercase;
 	background-color: transparent;
 	color: var(--white-color);
-  cursor: pointer;
-  
+	cursor: pointer;
 }
-
 .btn:hover,
 .btn:focus {
-  background-color: var(--accent-color);
+	background-color: var(--accent-color);
+}
+.btn.primary {
+	color: var(--main-text);
+}
+.btn.primary:hover,
+.btn.primary:focus {
+	color: var(--white-color);
+}
+.hero {
+	background-color: #64855b;
+}
+.media-link {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 136.363636%; /* 15/11 */
+	letter-spacing: 0.2em;
+	color: var(--main-text);
+}
+.media-link:hover,
+.media-link:focus {
+	color: var(--accent-color);
+}
+.suptitle {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 136.363636%; /* 15/11 */
+	text-transform: uppercase;
+}
+
+.hero-title {
+	font-family: var(--title-font);
+	font-weight: 700;
+	font-size: 72px;
+	line-height: 118.055556%; /* 85/72 */
+	letter-spacing: 0.05em;
+	color: var(--white-color);
+}
+.section-desc {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 166.666667%; /* 30/18 */
+	letter-spacing: 0.02em;
+}
+
+.section-title {
+	font-family: var(--title-font);
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 116.666667%; /* 49/42 */
+	letter-spacing: 0.05em;
+}
+.section-desc.post {
+	font-size: 14px;
+	line-height: 185.714286%; /* 26/14 */
 }
