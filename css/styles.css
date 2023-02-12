@@ -29,6 +29,9 @@ body {
 .them-light {
 	color: var(--secondary-text);
 }
+.this-light {
+	color: var(--white-color);
+}
 
 .page-header {
 	background-color: #9caa98;
@@ -111,7 +114,14 @@ body {
 	line-height: 166.666667%; /* 30/18 */
 	letter-spacing: 0.02em;
 }
-
+.to-light {
+	color: var(--prime-text);
+}
+.section-desc.post {
+	font-size: 14px;
+	line-height: 185.714286%; /* 26/14 */
+	color: var(--prime-text);
+}
 .section-title {
 	font-family: var(--title-font);
 	font-weight: 700;
@@ -119,7 +129,25 @@ body {
 	line-height: 116.666667%; /* 49/42 */
 	letter-spacing: 0.05em;
 }
-.section-desc.post {
-	font-size: 14px;
-	line-height: 185.714286%; /* 26/14 */
+#services {
+	background-color: #64855b;
+}
+.services-name,
+.services-price {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 166.666667%; /* 30/18 */
+	letter-spacing: 0.02em;
+	color: var(--secondary-text);
+}
+.advantages-cost {
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 135.714286%; /* 57/42 */
+	letter-spacing: 0.05em;
+}
+.advantages-text {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 136.363636%; /* 15/11 */
 }
