@@ -1,0 +1,64 @@
+:root {
+	--title-font: "Raleway", sans-serif;
+	--text-font: "Open Sans", sans-serif;
+	--white-color: #ffffff;
+	--main-text: #303030;
+	--prime-text: #555555;
+	--secondary-text: #9da4bd;
+	--accent-color: #ff6c00;
+	--section-color: #f7f7f7;
+	--text-form: rgba(157, 164, 189, 0.4);
+}
+
+body {
+	background-color: var(--white-color);
+	font-family: var(--text-font);
+}
+
+.list {
+	list-style: none;
+}
+.link {
+	text-decoration: none;
+}
+.page-header {
+	background-color: #9caa98;
+}
+.menu-link,
+.contact-phone {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 133.333333%; /* 16/12 */
+	letter-spacing: 0.1em;
+	color: var(--white-color);
+}
+.menu-link:hover,
+.menu-link:focus {
+	color: var(--accent-color);
+}
+.contact-phone:hover,
+.contact-phone:focus {
+  color: var(--accent-color);
+}
+
+.btn {
+	font-family: var(--text-font);
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 133.333333%; /* 16/12 */
+	letter-spacing: 0.09em;
+	width: 160px;
+	height: 40px;
+	border: 1px solid var(--accent-color);
+	border-radius: 25px;
+	text-transform: uppercase;
+	background-color: transparent;
+	color: var(--white-color);
+  cursor: pointer;
+  
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--accent-color);
+}
