@@ -179,6 +179,62 @@ body {
 	letter-spacing: 0.02em;
 	color: var(--accent-color);
 }
+
+.contacts-form {
+	display: flex;
+	flex-direction: column;
+	width: 570px;
+}
+.field-group {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 44px;
+}
+.form-field {
+	position: relative;
+}
+.form-label {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	pointer-events: none;
+	transform: translateY(-50%);
+
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 136.363636%; /* 15/11 */
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--text-form);
+	transition: transform 250ms linear;
+}
+.form-input {
+	width: 100%;
+	margin: 0;
+	padding: 8px 0;
+	background-color: transparent;
+	border: transparent;
+	border-bottom: 1px solid var(--text-form);
+}
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+	transform: translateY(-35px);
+	color: var(--white-color);
+}
+.contacts-message {
+	display: block;
+	height: 76px;
+	margin-bottom: 20px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid var(--text-form);
+	resize: none;
+}
+.contacts-message::placeholder {
+	color: var(--text-form);
+}
+
 #contacts {
 	background-color: #64855b;
 }

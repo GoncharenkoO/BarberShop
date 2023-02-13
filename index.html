@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>BarberShop</title>
+		<link rel="icon" type="image/png" href="./image/favicon.png" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -192,20 +193,44 @@
 				</ul>
 			</section>
 			<div id="contacts">
-				<section class="contacts-form">
+				<section class="contacts-left">
 					<h2 class="section-title this-light">Online-booking</h2>
-					<form action="">
-						<label for=""></label>
-						<input type="text" />
+					<form class="contacts-form" autocomplete="off">
+						<div class="field-group">
+							<div class="form-field">
+								<input type="text" class="form-input" id="name" name="name" placeholder=" " />
+								<label for="name" class="form-label">name</label>
+							</div>
+							<div class="form-field">
+								<input type="text" class="form-input" id="tel" name="tel" placeholder=" " />
+								<label for="tel" class="form-label">phone</label>
+							</div>
+						</div>
+						<textarea
+							class="contacts-message"
+							name="message"
+							id=""
+							cols="30"
+							rows="10"
+							placeholder="message"
+						></textarea>
+						<label class="privacy">
+							<input type="checkbox" class="visually-hidden checkbox" />
+							<div class="privacy-checkbox"></div>
+						</label>
 						<button class="btn" type="submit">send</button>
 					</form>
 				</section>
-				<section class="contacts-info">
+				<section class="contacts-right">
 					<h2 class="section-title this-light">Contacts</h2>
 					<address>
 						<ul class="contacts-list list">
 							<li class="contacts-item">
-								<a class="contacts-link link tick" href="https://goo.gl/maps/a4DPnED761tv3mqQ9" target="_blank" rel="noopener noreferrer"
+								<a
+									class="contacts-link link tick"
+									href="https://goo.gl/maps/a4DPnED761tv3mqQ9"
+									target="_blank"
+									rel="noopener noreferrer"
 									>st. Vasilkivska, 7A Kyiv, 08132</a
 								>
 							</li>
@@ -235,5 +260,6 @@
 				</ul>
 			</div>
 		</footer>
+		<script></script>
 	</body>
 </html>
