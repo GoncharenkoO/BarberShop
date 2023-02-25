@@ -67,7 +67,7 @@
 }
 .media-group {
 	transform: rotate(-90deg);
-	transform-origin: left top ;
+	transform-origin: left top;
 }
 .media-item:not(:last-child) {
 	margin-right: 40px;
@@ -179,12 +179,27 @@
 	transform: translateY(30px);
 }
 .advantages-cost {
+	/* position: relative;
+	width: min-content;
+	margin-left: auto;
+	margin-right: auto; */
 	margin-bottom: 6px;
 	font-weight: 700;
 	font-size: 42px;
 	line-height: 1.35; /* 57/42 */
 	letter-spacing: 0.05em;
 }
+/* .advantages-cost::before {
+	position: absolute;
+	display: block;
+	color: var(--accent-color);
+	top: 7px;
+	right: -10px;
+	content: "+";
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 22px;
+} */
 .advantages-text {
 	font-weight: 600;
 	font-size: 11px;
@@ -321,6 +336,7 @@
 .contacts-message::placeholder {
 	color: var(--text-form);
 }
+
 .contacts {
 	background-image: url(../image/contacts/contacts-fon.png);
 	background-size: cover;
@@ -350,14 +366,35 @@
 	margin-bottom: 20px;
 }
 .contacts-link {
+	display: flex;
+	align-items: center;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 1.66; /* 30/18 */
 	letter-spacing: 0.02em;
 	color: var(--secondary-text);
+	transition: color 250ms linear;
 }
 .contacts-link.tick {
 	font-weight: 700;
+}
+.contacts-icon {
+	flex-shrink: 0;
+	margin-right: 16px;
+	stroke: var(--secondary-text);
+	transition: stroke 250ms linear;
+}
+.extra {
+	align-self: baseline;
+	margin-top: 5px;
+}
+.contacts-link:hover,
+.contacts-link:focus {
+	color: var(--accent-color);
+}
+.contacts-link:hover .contacts-icon,
+.contacts-link:focus .contacts-icon {
+	stroke: var(--accent-color);
 }
 
 /****************** Page Footer *********************/
