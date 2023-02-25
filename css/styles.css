@@ -65,6 +65,17 @@ address {
 	line-height: 1.36; /* 15/11 */
 	text-transform: uppercase;
 }
+.suptitle::before {
+	display: block;
+	width: 60px;
+	height: 1px;
+	content: "";
+	margin-right: 20px;
+  background-color: currentColor;
+}
+.suptitle.them-dark::before {
+  background-color: var(--sup-text);
+}
 .section-title {
 	font-family: var(--title-font);
 	font-weight: 700;
