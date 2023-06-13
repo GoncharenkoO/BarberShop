@@ -1,6 +1,9 @@
 /****************** Page Header *********************/
 .page-header {
-	background-color: #9caa98;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 	padding: 32px 0;
 }
 .page-header-container {
@@ -28,18 +31,40 @@
 	line-height: 1.33; /* 16/12 */
 	letter-spacing: 0.1em;
 	color: var(--white-color);
+	transition: color var(--time-function);
 }
 .menu-link:hover,
-.menu-link:focus {
-	color: var(--accent-color);
-}
-.contact-phone {
-	margin-left: auto;
-	margin-right: 43px;
-}
+.menu-link:focus,
 .contact-phone:hover,
 .contact-phone:focus {
 	color: var(--accent-color);
+}
+.menu-link:after,
+.contact-phone::after {
+	content: "";
+
+	position: relative;
+	top: 8px;
+	display: block;
+	width: 100%;
+	height: 0;
+	border: 1px solid var(--accent-color);
+	background-color: var(--accent-color);
+
+	transform: scaleX(0);
+	transition: transform var(--time-function);
+}
+
+.menu-link:hover:after,
+.menu-link:focus:after,
+.contact-phone:hover::after,
+.contact-phone:focus::after {
+	transform: scaleX(1);
+}
+
+.contact-phone {
+	margin-left: auto;
+	margin-right: 43px;
 }
 
 /****************** Page Hero *********************/
@@ -255,6 +280,7 @@
 	height: 44px;
 	border-radius: 50%;
 	background-color: var(--white-color);
+	transition: background-color var(--time-function), fill var(--time-function);
 }
 .social-link:hover,
 .social-link:focus {
@@ -309,7 +335,7 @@
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	color: var(--text-form);
-	transition: transform 250ms linear;
+	transition: transform 250ms var(--time-function);
 }
 .form-input {
 	width: 100%;
@@ -373,7 +399,7 @@
 	line-height: 1.66; /* 30/18 */
 	letter-spacing: 0.02em;
 	color: var(--secondary-text);
-	transition: color 250ms linear;
+	transition: color 250ms var(--time-function);
 }
 .contacts-link.tick {
 	font-weight: 700;
@@ -382,7 +408,7 @@
 	flex-shrink: 0;
 	margin-right: 16px;
 	stroke: var(--secondary-text);
-	transition: stroke 250ms linear;
+	transition: stroke 250ms var(--time-function);
 }
 .extra {
 	align-self: baseline;
